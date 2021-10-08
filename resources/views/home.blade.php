@@ -11,6 +11,7 @@
     @forelse ($travels as $travel)
         <div><b>Destinazione: </b> {{$travel->destination}}</div>
         <div><b>Prezzo: </b> {{ number_format($travel->price, 2, ",", "") . " €" }} </div>
+        <div><b>Mezzo di trasporto: </b> {{ $travel->mean_of_transport }} </div>
         <br>
     @empty
         <div>Non ci sono viaggi al momento</div>
